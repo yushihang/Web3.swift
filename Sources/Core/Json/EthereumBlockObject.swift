@@ -69,6 +69,9 @@ public struct EthereumBlockObject: Codable {
     /// Array of uncle hashes.
     public let uncles: [EthereumData]?
 
+    /// The block base fees per gas (EIP-1559)
+    public let baseFeePerGas: EthereumQuantity?
+
     /**
      * Represents a transaction as either a hash or an object.
      */
