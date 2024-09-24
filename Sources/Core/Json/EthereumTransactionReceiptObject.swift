@@ -27,6 +27,9 @@ public struct EthereumTransactionReceiptObject: Codable {
     /// The amount of gas used by this specific transaction alone.
     public let gasUsed: EthereumQuantity
 
+    /// The price per unit of gas paid by the sender
+    public let effectiveGasPrice: EthereumQuantity?
+
     /// 20 Bytes - The contract address created, if the transaction was a contract creation, otherwise nil.
     public let contractAddress: EthereumData?
 
